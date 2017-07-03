@@ -6,11 +6,11 @@ package kg.kg12;
 public class DocSample {
     public static void main(String[] args) {
 
-        Person person = new Person("teu", 170.0, 75.0);
+        Person person = new Person("teu", 1.70, 65.0);
         System.out.println(person.toString());
         double bmi = person.getBMI();
         System.out.println(bmi);
-        person.diet(3.2);
+        person.diet(-12.3);
         System.out.println(person.getBMI());
     }
 
