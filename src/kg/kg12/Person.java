@@ -18,6 +18,11 @@ public class Person {
        this.weight=weight;
     }
 
+    @Override
+    public String toString(){
+        return "name:"+name+", height:"+height+", weight"+weight;
+    }
+
     /**
      * このインスタンスのBMI値を返します。
      * @return 体重[kg] / (身長[cm] * 身長[cm])
@@ -28,8 +33,8 @@ public class Person {
 
     public double diet(double a) {
 
-            double dieted= this.weight - a;
-            return dieted;
+           this.weight -= a;
+            return this.weight;
         /*} catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
         }finally {
@@ -37,8 +42,4 @@ public class Person {
         }*/
     }
 
-
-    public String toString(){
-       return "name:"+name+", height:"+height+", weight"+weight;
-    }
 }

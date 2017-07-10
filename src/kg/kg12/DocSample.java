@@ -11,7 +11,9 @@ public class DocSample {
         double bmi = person.getBMI();
         System.out.println(bmi);
         person.diet(-12.3);
+        System.out.println(person.toString());
         System.out.println(person.getBMI());
+        System.out.println();
     }
 
 }
